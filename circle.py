@@ -3,7 +3,9 @@ import math
 r = 5
 
 class Circle:
-    ...
+    def __init__(self, area, circumference):
+        self.area = area
+        self.circumference = circumference
 
 # def get_area():
 #     # r = float(input("Radius: "))
@@ -14,9 +16,9 @@ class Circle:
 #     return 2.0 * math.pi * r
 
 def get_circle():
-    circle = Circle()
-    circle.area = math.pi * r ** 2.0
-    circle.circumference = 2.0 * math.pi * r
+    area = math.pi * r ** 2.0
+    circumference = 2.0 * math.pi * r
+    circle = Circle(area, circumference)
     return circle
     
 def main(): 
