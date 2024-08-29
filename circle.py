@@ -18,8 +18,7 @@ class Circle:
 def get_circle():
     area = math.pi * r ** 2.0
     circumference = 2.0 * math.pi * r
-    circle = Circle(area, circumference)    # constructor call
-    return circle
+    return Circle(area, circumference)    # constructor call
     
 def main(): 
     circle = get_circle()
