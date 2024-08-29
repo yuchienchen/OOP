@@ -10,11 +10,11 @@ class Circle:
     def __str__(self):
         return f"{self.area} is twice of {self.circumference}"
     
-    # Getter
+    @property
     def circumference(self):
         return self.circumference
     
-    # Setter
+    @circumference.setter
     def circumference(self, circumference):
         self.circumference = circumference
         
