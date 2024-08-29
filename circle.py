@@ -10,13 +10,11 @@ class Circle:
     def __str__(self):
         return f"{self.area} is twice of {self.circumference}"
     
-    @property
-    def circumference(self):
-        return self._circumference
-    
-    @circumference.setter
-    def circumference(self, circumference):
-        self._circumference = circumference
+    @classmethod
+    def get(cls):
+        area = math.pi * r ** 2.0
+        circumference = 2.0 * math.pi * r
+        return cls(area, circumference)
         
 
 # def get_area():
@@ -27,13 +25,9 @@ class Circle:
 #     # r = float(input("Radius: "))
 #     return 2.0 * math.pi * r
 
-def get_circle():
-    area = math.pi * r ** 2.0
-    circumference = 2.0 * math.pi * r
-    return Circle(area, circumference)    # constructor call
     
 def main(): 
-    circle = get_circle()
+    circle = Circle.get()
     # area = get_area()
     # circumference = get_circumference()
     # print(circle.area)
