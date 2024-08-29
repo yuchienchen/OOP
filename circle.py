@@ -6,6 +6,18 @@ class Circle:
     def __init__(self, area, circumference):
         self.area = area
         self.circumference = circumference
+    
+    def __str__(self):
+        return f"{self.area} is twice of {self.circumference}"
+    
+    # Getter
+    def circumference(self):
+        return self.circumference
+    
+    # Setter
+    def circumference(self, circumference):
+        self.circumference = circumference
+        
 
 # def get_area():
 #     # r = float(input("Radius: "))
@@ -24,8 +36,9 @@ def main():
     circle = get_circle()
     # area = get_area()
     # circumference = get_circumference()
-    print(circle.area)
-    print(circle.circumference)
+    # print(circle.area)
+    # print(circle.circumference)
+    print(circle)
 
 
 if __name__ == "__main__":
