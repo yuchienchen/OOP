@@ -12,11 +12,11 @@ class Circle:
     
     @property
     def circumference(self):
-        return self.circumference
+        return self._circumference
     
     @circumference.setter
     def circumference(self, circumference):
-        self.circumference = circumference
+        self._circumference = circumference
         
 
 # def get_area():
